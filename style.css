@@ -1,7 +1,9 @@
 h1 {
-    background-color: darkcyan;
+    color: #c92992;
 }
 
 body {
-    font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+	color: black;
+	font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+	background-color: whitesmoke;
 }
