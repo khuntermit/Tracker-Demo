@@ -9,53 +9,37 @@
 
 <body>
 
-<main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce">
+    <main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce">
 
-<h1>
-	Countdown to Riley's Run
-</h1>
+    <h1>
+        Countdown
+    </h1>
 
-<p property="about">
-	<strong>About me:</strong> I'm Riley Runalot! I have run regularly since I was 13, ran completitively at MIT, and currently train for long distance races.
-</p>
+    <p property="about">
+        <strong>About me:</strong> I have run regularly since I was 13, ran completitively at MIT, and currently train for long distance races.
+    </p>
 
-<!-- Edit picture dims later to match -->
-<img property="image" src="images/Girls on the Run.jpg" alt="" width="100" height="100">
-   
-<p property="mission">
-    <strong>Mission:</strong> On Monday, April 16th, I will be running in the Boston Marathon to support  
-    <a href="https://www.girlsontherunboston.org/" title="Girls on the Run"> Girls on the Run</a>
-    , a program that supports girls in 3rd-8th grade to develop essential skills to help them navigate their worlds and establish a lifetime appreciation for health and fitness. All donations are appreciated!
-</p>
+    <!-- Edit picture dims later to match -->
+    <img property="image" src="images/Girls on the Run.jpg" alt="" width="100" height="100">
 
-<div mv-storage="local">
-	Progress:
-	<span property="progress">0</span>
-    <span property="units">km</span>
-    Goal:
+    <p property="mission">
+        <strong>Mission:</strong> On Monday, April 16th, I will be running in the Boston Marathon to support  
+        <a href="https://www.girlsontherunboston.org/" title="Girls on the Run"> Girls on the Run</a>
+        , a program that supports girls in 3rd-8th grade to develop essential skills to help them navigate their worlds and establish a lifetime appreciation for health and fitness. All donations are appreciated!
+    </p>
 
-	<span property="goal">100</span>
-    <!-- How do I connect the unit property? -->
-    <span property="units">km</span>
-</div>
+    <div>
+        <span property="progress">0</span>
+<!--        <span property="units"> [units] </span>-->
+        <span> / </span>
+        <span property="goal">100</span>
+<!--        <span property="units"> [units] </span>-->
+    </div>
+    
+    <div>
+        <progress value=[progress] max=[goal]>[progress]</progress>
+    </div>
 
-<!-- First failed attempt - do not want editable by the user    
-<div mv-app="tracker" mv-storage="local" mv-autosave="0">
-	<label>
-		Progress:
-		<input type="number" property="progress" value="25" />
-	</label>
-    <label>
-		Goal:
-		<input type="number" property="goal" value="100" />
-	</label>
-</div>
-
-
-<p>Slider value: [progress]/[goal]</p>
-<input type="range" property="slider" title="[progress]%" />
--->
-
-</main>
+    </main>
 
 </body>
