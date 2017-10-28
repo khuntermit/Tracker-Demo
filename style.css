@@ -1,9 +1,15 @@
+main {
+    text-align: center;
+}
+
 h1 {
-    color: #c92992;
+    font: bold 200% Bodoni 72, "Didot LT STD", "Bodoni 72", Bodoni, "Bodoni MT", "Libre Bodoni", "Hoefler Text", Cambria, Georgia, serif;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
 
 body {
-	color: black;
-	font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
-	background-color: whitesmoke;
+  font: 120% Cambria; 
 }
