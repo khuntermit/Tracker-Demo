@@ -2,8 +2,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Goal Tracker • Mavo Demos</title>
-	<script src="https://get.mavo.io/mavo.js"></script>
-	<link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+	<script src="https://dev.mavo.io/dist/mavo.js"></script>
+	<link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,13 +27,13 @@
     
 <!--progress-->
     <div>
-        <span property="progress">[sum(amount)]</span>
+        <span property="progress1">[sum(amount)]</span>
         <span> of </span>
         <span property="goal">100</span>
         <span property="units" mv-edit-list="units2">dollars</span>
     </div>
     
-<!--    dropdown list-->
+<!--dropdown list-->
     <div>
         <datalist id="units2">
             <option>Euros</option>
@@ -41,13 +41,14 @@
         </datalist>
     </div>   
         
-<!--    progress bar-->
+<!--progress bar-->
     <div>
-        <progress value=[progress] max=[goal]>[progress]</progress>
+        <progress value=[progress1] mv-alias="progress" max=[goal]></progress>
     </div>
-    
+
+<!--log-->
     <section>
-			<article property="contribution" mv-multiple>
+			<article property="progress" mv-alias="contribution" mv-multiple>
 				<header>
 					<h1>
 						<time datetime="2016-03-15" property="date">15 Mar 2016</time>
