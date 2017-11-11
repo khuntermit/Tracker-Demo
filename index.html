@@ -5,8 +5,7 @@
 	<script src="https://dev.mavo.io/dist/mavo.js"></script>
 	<link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css">
 	<link rel="stylesheet" href="style.css">
-</head>
-
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Kreon" rel="stylesheet">
 <body>
 
     <main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce" class="mv-autoedit">
@@ -19,10 +18,13 @@
 <!--picture-->
     <img property="mainimage" src="images/Vest%20a%20Dog.jpg" alt="" width="100" height="100" class="img-circle">
 
+<!--about header-->
+    <h2>
+        About
+    </h2>
 <!--about-->
     <p property="about" class="tinymce">
-        <strong>About</strong>
-        <br>We want to fundraise $1000 to provide every dog in the Boston police with a bullet-proof vest!
+        Vest-a-Dog is fundraising $1000 to provide every dog in the Boston police with a bullet-proof vest!
     </p>
     
 <!--progress-->
@@ -50,10 +52,10 @@
     <section>
 			<article property="progress" mv-alias="contribution" mv-multiple>
 				<header>
-					<h1>
+					<h2>
 						<time datetime="2016-03-15" property="date">15 Mar 2016</time>
 						<div property="name">Animal Rescue League of Boston</div>
-					</h1>
+					</h2>
 					<p>
 						<span property="amount">250</span>
 					</p>
