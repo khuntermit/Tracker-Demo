@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Montserrat" rel="stylesheet">
 <body>
-    
 
 <main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce" class="mv-autoedit">
 
@@ -46,26 +45,29 @@
 <!--progress-->
     <div class="flex-right light-grey round-xlarge padded">
         <h2><b>Progress</b></h2>
-        <div>
+        <hr/>
+        <div><b>
             <span>[sum(amount)]</span>
             <span property="units" mv-edit-list="units2">dollars</span>
+            </b>
         </div>
+        <p>[count(progress)] logs</p>
     </div>
 
 <!--log-->
     <section>
 			<article property="progress" mv-alias="contribution" class="card padded light-grey flex-right"mv-multiple>
 				<header>
-					<h3 class="center">
+					<h4 class="center">
 						<time datetime="2016-03-15" property="date">15 Mar 2016</time>
-                    </h3>
+                    </h>
                     <h2>
 						<div property="name">Animal Rescue League of Boston</div>
 					</h2>
-					<h2>
+					<h3>
 						<span property="amount">250</span>
                         <span>[units]</span>
-					</h2>
+					</h3>
 				</header>
 			</article>
     </section>
