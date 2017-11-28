@@ -5,36 +5,28 @@
 	<script src="https://dev.mavo.io/dist/mavo.js"></script>
 	<link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css">
 	<link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-
-    
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Montserrat" rel="stylesheet">
 <body>
 
 <main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce" class="mv-autoedit">
 
 <!--left column-->
- <div class="third">
+ <div class="flex-left">
     
-    <div class="white text-black card-4">
-        <div class="display-container">
+    <div class="card white">
             
 <!--            image-->
-            <img property="mainimage" src="images/Vest%20a%20Dog.jpg" style="width:100%" alt="Avatar">
-            
+        <img property="mainimage" src="images/Vest%20a%20Dog.jpg" style="width:100%" alt="Avatar">
+
 <!--            title-->
-            <div>
-                <h2 property="title" class="tinymce">Vest a Dog</h2>
-            </div>
+        <div>
+            <h2 property="title" class="tinymce">Vest a Dog</h2>
         </div>
         
-<!--        about-->
-        <div class="container">
-            <p property="about" class="tinymce"><i class="margin-right large text-teal"></i>Vest-a-Dog is fundraising $1000 to provide every dog in the Boston police with a bullet-proof vest!</p>
         
-<!--        goal-->
-        <p class="large"><b><i class="margin-right text-teal"></i>Goal</b></p>
-        <span property="goal">1000</span>
-        <span property="units" mv-edit-list="units2">dollars</span>
+<!--        about-->
+        <div class="padded">
+            <p property="about" class="tinymce">Vest-a-Dog is fundraising $1000 to provide every dog in the Boston police with a bullet-proof vest!</p>
 
 <!--        dropdown menu-->
         <div>
@@ -43,32 +35,36 @@
                 <option>contributions</option>
             </datalist>
         </div>        
-         
-<!--fix progress bar-->
-        <p class="large"><b><i class="margin-right text-teal"></i>Progress</b></p>
-            <div class="light-grey round-xlarge small">
-                <div class="container center round-xlarge light-red" style="width:80%">[sum(amount)]</div>
-            </div>
-            <br>
+            
         </div>
     </div><br>
 
 <!-- End Left Column -->
 </div>
-
+    
+<!--progress-->
+    <div class="flex-right light-grey round-xlarge padded">
+        <h2><b>Progress</b></h2>
+        <div>
+            <span>[sum(amount)]</span>
+            <span property="units" mv-edit-list="units2">dollars</span>
+        </div>
+    </div>
 
 <!--log-->
     <section>
-			<article property="progress" mv-alias="contribution" mv-multiple>
+			<article property="progress" mv-alias="contribution" class="card padded light-grey flex-right"mv-multiple>
 				<header>
-					<h2>
-						<time datetime="2016-03-15" property="date" default="today" class="xlarge">15 Mar 2016</time>
+					<h3 class="center">
+						<time datetime="2016-03-15" property="date">15 Mar 2016</time>
+                    </h3>
+                    <h2>
 						<div property="name">Animal Rescue League of Boston</div>
 					</h2>
-					<p>
+					<h2>
 						<span property="amount">250</span>
                         <span>[units]</span>
-					</p>
+					</h2>
 				</header>
 			</article>
     </section>
