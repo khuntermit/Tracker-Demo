@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Montserrat" rel="stylesheet">
 <body>
 
+    
 <main mv-app="tracker" mv-storage="https://github.com/khuntermit" mv-plugins="tinymce" class="mv-autoedit">
 
 <!--left column-->
@@ -17,14 +18,13 @@
     <img property="mainimage" src="images/Vest%20a%20Dog.jpg" style="width:100%" alt="Avatar">
 
 <!--title-->
-    <h1 property="title" class="tinymce">Vest a Dog</h1>
+    <h1 property="title" class="tinymce padded">Vest a Dog</h1>
         
 <!--about-->
     <p property="about" class="tinymce card-padded">Vest-a-Dog is fundraising $1000 to provide every dog in the Boston police with a bullet-proof vest!</p>       
             
 <!--end left column-->
 </div>
-
         
 <!--dropdown menu-->
     <div>
@@ -33,6 +33,7 @@
             <option>contributions</option>
             <option>miles</option>
             <option>kilometers</option>
+            <option>hours</option>
         </datalist>
     </div> 
 
@@ -40,11 +41,11 @@
     <div class="flex-right light-grey round-xlarge">
         <h2><b>Progress</b></h2>
         <hr/>
-        <p><b>
+        <h3><b>
             <span>[sum(amount)]</span>
             <span property="units" mv-edit-list="units2">dollars</span>
             </b>
-        </p>
+        </h3>
         <p>[count(progress)] logs</p>
     </div>
     

@@ -28,6 +28,10 @@ h2{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+.dims{
+    height: 500px; width: 500px; overflow: hidden; 
+}
+
 .round-xlarge{
     border-radius:16px
 }
