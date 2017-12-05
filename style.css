@@ -19,12 +19,12 @@ hr {
 }
 
 h1{
-    font-size:34px
+    font-size:32px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 h2{
-    font-size:30px
+    font-size:26px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -38,18 +38,31 @@ h2{
 
 .flex-left{
     flex-direction: row;
-    width: 40%;
+    width: 32%;
     float: left;
 }
 
 .flex-right{
-    width: 45%;
+    width: 66%;
     flex-direction: row;
     float: right;
 }
 
+.flex-small {
+    display: inline-flex;
+    width: 29%;
+    flex-direction: column;
+}
+
+.card-padded{
+    padding: 2%;
+    margin: 2%;
+    padding-bottom: 10%
+}
+
 .padded{
-    padding: 2%; margin: 2%;
+    padding: 1%; 
+    margin: 1%;
 }
 
 .light-grey{
@@ -59,6 +72,7 @@ h2{
 .white {
     background-color:white!important
 }
+
 
 
 
